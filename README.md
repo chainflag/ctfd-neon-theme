@@ -3,9 +3,9 @@ Compatible with CTFd Version 3.3.0
 
 Few Screenshots:
 
- ![Index Page](screenshots/index.jpg "Index Page")
+ ![Index Page](screenshots/index.png "Index Page")
  
- ![Login Page](screenshots/login.jpg "Login Page")
+ ![Login Page](screenshots/login.png "Login Page")
 
 ## Install
 ```
