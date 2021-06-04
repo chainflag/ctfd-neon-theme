@@ -5,8 +5,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="{{ Configs.ctf_small_icon }}" type="image/x-icon">
-	<link rel="stylesheet" href="{{ url_for('views.themes', path='css/fonts.css') }}">
-	<link rel="stylesheet" href="{{ url_for('views.themes', path='css/core.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('views.themes', theme='core', path='css/fonts.css') }}">
+	<link rel="stylesheet" href="{{ url_for('views.themes', theme='core', path='css/core.min.css') }}">
 	<link rel="stylesheet" href="{{ url_for('views.themes', path='css/style.css') }}">
 	<link rel="stylesheet" href="{{ url_for('views.themes', path='css/bootstrap4-neon-glow.min.css') }}">
     
@@ -42,9 +42,9 @@
 		</div>
 	</footer>
 
-	<script defer src="{{ url_for('views.themes', path='js/vendor.bundle.js') }}"></script>
-	<script defer src="{{ url_for('views.themes', path='js/core.js') }}"></script>
-	<script defer src="{{ url_for('views.themes', path='js/helpers.js') }}"></script>
+	<script defer src="{{ url_for('views.themes', theme='core', path='js/vendor.bundle.js') }}"></script>
+	<script defer src="{{ url_for('views.themes', theme='core', path='js/core.js') }}"></script>
+	<script defer src="{{ url_for('views.themes', theme='core', path='js/helpers.js') }}"></script>
 
 	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -53,7 +53,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	
 	{% block entrypoint %}
-	<script defer src="{{ url_for('views.themes', path='js/pages/main.js') }}"></script>
+	<script defer src="{{ url_for('views.themes', theme='core', path='js/pages/main.js') }}"></script>
 	{% endblock %}
 
 	{% block scripts %}

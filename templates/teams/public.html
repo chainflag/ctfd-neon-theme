@@ -189,12 +189,12 @@
 			'account_id': team.id,
 		} | tojson }};
 	</script>
-	<script defer src="{{ url_for('views.themes', path='js/echarts.bundle.js') }}"></script>
-	<script defer src="{{ url_for('views.themes', path='js/graphs.js') }}"></script>
+	<script defer src="{{ url_for('views.themes', theme='core', path='js/echarts.bundle.js') }}"></script>
+	<script defer src="{{ url_for('views.themes', theme='core', path='js/graphs.js') }}"></script>
 {% endblock %}
 
 {% block entrypoint %}
 	{% if solves or awards %}
-		<script defer src="{{ url_for('views.themes', path='js/pages/stats.js') }}"></script>
+		<script defer src="{{ url_for('views.themes', theme='core', path='js/pages/stats.js') }}"></script>
 	{% endif %}
 {% endblock %}

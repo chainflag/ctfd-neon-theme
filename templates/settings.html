@@ -129,5 +129,5 @@
 {% block scripts %}{% endblock %}
 
 {% block entrypoint %}
-  <script defer="defer" src="{{ url_for('views.themes', path='js/pages/settings.js') }}"></script>
+  <script defer="defer" src="{{ url_for('views.themes', theme='core', path='js/pages/settings.js') }}"></script>
 {% endblock %}

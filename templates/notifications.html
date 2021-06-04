@@ -25,5 +25,5 @@
 {% endblock %}
 
 {% block entrypoint %}
-  <script defer="defer" src="{{ url_for('views.themes', path='js/pages/notifications.js') }}"></script>
+  <script defer="defer" src="{{ url_for('views.themes', theme='core', path='js/pages/notifications.js') }}"></script>
 {% endblock %}

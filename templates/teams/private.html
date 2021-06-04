@@ -374,13 +374,13 @@
 		} | tojson }};
 		var team_captain = {{ (user.id == team.captain_id) | tojson }};
 	</script>
-	<script defer src="{{ url_for('views.themes', path='js/echarts.bundle.js') }}"></script>
+	<script defer src="{{ url_for('views.themes', theme='core', path='js/echarts.bundle.js') }}"></script>
 	{% if solves or awards %}
-		<script defer src="{{ url_for('views.themes', path='js/graphs.js') }}"></script>
-		<script defer src="{{ url_for('views.themes', path='js/pages/stats.js') }}"></script>
+		<script defer src="{{ url_for('views.themes', theme='core', path='js/graphs.js') }}"></script>
+		<script defer src="{{ url_for('views.themes', theme='core', path='js/pages/stats.js') }}"></script>
 	{% endif %}
 {% endblock %}
 
 {% block entrypoint %}
-	<script defer src="{{ url_for('views.themes', path='js/pages/teams/private.js') }}"></script>
+	<script defer src="{{ url_for('views.themes', theme='core', path='js/pages/teams/private.js') }}"></script>
 {% endblock %}
