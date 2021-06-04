@@ -1,4 +1,4 @@
 HTML:
   beautifiers:
-    - JS-Beautify
+    # - JS-Beautify
     - Pretty Diff
