@@ -1,0 +1,11 @@
+{
+    "unibeautify.defaultConfig": ".unibeautifyrc.yml",
+    "unibeautify.enabled": true,
+    "[jinja-html]": {
+        "editor.defaultFormatter": "Glavin001.unibeautify-vscode",
+        "editor.formatOnSave": true
+    },
+    "files.associations": {
+        "*.html": "jinja-html"
+    }
+}
