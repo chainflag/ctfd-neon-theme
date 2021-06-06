@@ -20,7 +20,7 @@
             {% with form = Forms
               .self
               .SettingsForm(country = country) %}
-            {% from "macros/forms.html" import render_extra_fields %}
+            {% from "core/macros/forms.html" import render_extra_fields %}
             <form id="user-profile-form" method="post" accept-charset="utf-8" autocomplete="off" role="form" class="form-horizontal">
               <div class="form-group">
                 <b>{{ form.name.label }}</b>

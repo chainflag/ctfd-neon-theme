@@ -13,7 +13,7 @@
         {% with form = Forms
           .auth
           .RegistrationForm() %}
-        {% from "macros/forms.html" import render_extra_fields %}
+        {% from "core/macros/forms.html" import render_extra_fields %}
         <form method="post" accept-charset="utf-8" autocomplete="off" role="form">
           <div class="mb-3">
             {{ form.name.label }}
