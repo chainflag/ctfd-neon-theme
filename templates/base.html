@@ -37,10 +37,12 @@
     </main>
 
     <footer class="footer">
-      <div class="container text-center">
-        Powered by
-        <a href="https://ctfd.io" class="text-secondary">CTFd</a>
-      </div>
+        <div class="container text-center">
+            {% if url_for(request.endpoint) == '/' %}
+                Powered by
+                <a href="https://ctfd.io" class="text-secondary">CTFd</a>
+            {% endif %}
+        </div>
     </footer>
 
     <script defer="defer" src="{{ url_for('views.themes', theme='core', path='js/vendor.bundle.js') }}"></script>
