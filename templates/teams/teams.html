@@ -63,9 +63,6 @@
               <td class="d-none d-md-table-cell d-lg-table-cell">
                 <b>Affiliation</b>
               </td>
-              <td class="d-none d-md-table-cell d-lg-table-cell">
-                <b>Country</b>
-              </td>
             </tr>
           </thead>
           <tbody>
@@ -104,14 +101,6 @@
                       </span>
                     {% endif %}
                   {% endif %}
-                </td>
-                <td class="d-none d-md-table-cell d-lg-table-cell text-center">
-                  <span>
-                    {% if team.country %}
-                      <i class="flag-{{ team.country.lower() }}"></i>
-                      {{ lookup_country_code(team.country) }}
-                    {% endif %}
-                  </span>
                 </td>
               </tr>
             {% endfor %}

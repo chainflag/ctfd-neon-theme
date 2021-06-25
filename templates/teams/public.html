@@ -17,14 +17,6 @@
           <span class="badge badge-primary">{{ team.affiliation }}</span>
         </h3>
       {% endif %}
-      {% if team.country %}
-        <h3 class="d-inline-block">
-          <span class="badge badge-primary">
-            <i class="flag-{{ team.country.lower() }}"></i>
-            {{ lookup_country_code(team.country) }}
-          </span>
-        </h3>
-      {% endif %}
       {% for field in team.fields %}
         <h3 class="d-block">
           {{ field.name }}:
