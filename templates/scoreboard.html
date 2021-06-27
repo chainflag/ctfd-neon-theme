@@ -7,13 +7,6 @@
   </div>
   <div class="container">
     {% include "components/errors.html" %}
-
-    <div id="score-graph" class="row d-flex align-items-center">
-      <div class="col-md-12 text-center">
-        <i class="fas fa-circle-notch fa-spin fa-3x fa-fw spinner"></i>
-      </div>
-    </div>
-
     {% cache 60,
     CacheKeys.PUBLIC_SCOREBOARD_TABLE %}
     {% if standings %}
@@ -40,18 +33,6 @@
                   <td>
                     <a href="{{ generate_account_url(standing.account_id) }}">
                       {{ standing.name | truncate(50) }}
-
-                      {% if standing.oauth_id %}
-                        {% if Configs.user_mode == 'teams' %}
-                          <a href="https://majorleaguecyber.org/t/{{ standing.name }}">
-                            <span class="badge badge-primary">Official</span>
-                          </a>
-                        {% elif Configs.user_mode == 'users' %}
-                          <a href="https://majorleaguecyber.org/u/{{ standing.name }}">
-                            <span class="badge badge-primary">Official</span>
-                          </a>
-                        {% endif %}
-                      {% endif %}
                     </a>
                   </td>
                   <td>{{ standing.score }}</td>
