@@ -1,5 +1,5 @@
 # ctfd-neon-theme
-Compatible with CTFd Version 3.4.0
+Compatible with CTFd Version >=3.4.0
 
 Few Screenshots:
 
